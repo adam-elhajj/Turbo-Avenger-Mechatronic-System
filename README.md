@@ -10,7 +10,7 @@ A high-precision, multi-actuator mechatronic system engineered for autonomous, s
 ### 📺 System Verification & Demo
 Click the player below to watch the **Turbo Avenger** execute its fully autonomous 3-stage delivery sequence:
 
-[![Turbo Avenger Verification Demo](https://youtube.com](https://www.youtube.com/watch?v=t6WQirkNGkE))](https://youtu.be "Turbo Avenger Verification Demo")
+[![Turbo Avenger Verification Demo]([https://youtube.com](https://www.youtube.com/watch?v=t6WQirkNGkE)](https://www.youtube.com/watch?v=t6WQirkNGkE))](https://youtu.be "Turbo Avenger Verification Demo")
 
 ---
 
