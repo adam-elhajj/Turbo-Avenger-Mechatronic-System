@@ -1,7 +1,4 @@
 # Turbo Avenger: Autonomous Mechatronic Payload Delivery System
-[![Platform: Arduino & ESP32](https://shields.io)](https://github.com)
-[![CAD: AutoCAD](https://shields.io)](https://github.com)
-[![Status: Functional Prototype](https://shields.io)](https://github.com)
 
 A high-precision, multi-actuator mechatronic system engineered for autonomous, search-and-rescue inspired payload delivery. Developed as a milestone cornerstone engineering project at the **University of Windsor**, this system automates the storage, sequencing, and deployment of three separate payloads to a static target under real-world constraints.
 
