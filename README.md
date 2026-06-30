@@ -1,4 +1,7 @@
 # Turbo Avenger: Autonomous Mechatronic Payload Delivery System
+[![Platform: Arduino & ESP32](https://shields.io)](https://github.com)
+[![CAD: AutoCAD](https://shields.io)](https://github.com)
+[![Status: Functional Prototype](https://shields.io)](https://github.com)
 
 A high-precision, multi-actuator mechatronic system engineered for autonomous, search-and-rescue inspired payload delivery. Developed as a milestone cornerstone engineering project at the **University of Windsor**, this system automates the storage, sequencing, and deployment of three separate payloads to a static target under real-world constraints.
 
@@ -17,16 +20,34 @@ Click the player below to watch the **Turbo Avenger** execute its fully autonomo
 * **Component Reliability:** Eliminated jamming bottlenecks using a custom dual-servo escapement architecture.
 * **Fiscal Optimization:** Fully prototyped, value-engineered, and deployed within a strict **\$328 budget limit**.
 
-## 🛠️ System Architecture & Implementation
+---
+
+## 🛠️ System Architecture & Visual Design
 
 ### ⚙️ Mechanical & Actuation Architecture
 * **Energy Storage & Release:** Features a synchronized servo-driven energy storage system paired with a rotating latch mechanism for instantaneous power release.
 * **Automated Autoloading:** Designed a dual-servo mechanical escapement subsystem to prevent multi-payload feeding failures and isolate system jams.
 * **Design Validation:** Validated kinematic constraints and assembly interfaces via iterative **3D CAD modeling** and stress verification.
 
-### 🔌 Embedded Control Systems & Firmware
+<table>
+  <tr>
+    <td><b>3D System Modeling</b></td>
+    <td><b>Orthographic & Isometric Schematics</b></td>
+  </tr>
+  <tr>
+    <td><img src="Media/3D%20Model.jpg" alt="3D Model" width="100%"></td>
+    <td><img src="Media/Final%20Orthographic%20Design.jpg" alt="Orthographic Design" width="100%"></td>
+  </tr>
+</table>
+
+### 🔌 Embedded Control Systems & Hardware Interface
 * **Dual-MCU Architecture:** Implemented an **Arduino Uno R3** alongside an **ESP32** to handle strict real-time control, parallel processing constraints, and high-frequency state machine management.
 * **State Machine & Timing Logic:** Programmed asynchronous timing models for precise actuator triggering, transition validation, and deterministic safety overrides.
+
+<p align="center">
+  <b>System Wiring & Electrical Interface Diagram</b><br>
+  <img src="Media/Arduino%20and%20ESP32%20Wiring.jpg" alt="Arduino and ESP32 Wiring Diagram" width="80%">
+</p>
 
 ---
 
@@ -37,13 +58,17 @@ Click the player below to watch the **Turbo Avenger** execute its fully autonomo
 │   ├── Top plate.dwg
 │   └── Part_1_through_6.dwg   # Individual component layouts
 ├── Firmware/                  # Microcontroller Source Code
-│   ├── Arduino_Control/       # Actuator management & timing scripts
-│   └── ESP32_Logic/           # State machine & sensor management
+│   ├── Lunching_part_code/    # Actuator management & launch control scripts
+│   └── Final-Line-Following.ino # Main path tracking algorithm script
 ├── Documentation/             # Engineering Specifications
 │   ├── RobotCar_Part_List.pdf # Complete Bill of Materials (BOM)
 │   ├── Final Proposal Report  # Technical design documentation
 │   └── RFP_Amendments.pdf     # Engineering constraint compliances
-└── Media/                     # Visual Assets
+└── Media/                     # Visual Assets & Portfolio Graphics
+    ├── 3D Model.jpg
+    ├── Arduino and ESP32 Wiring.jpg
+    ├── Final Orthographic Design.jpg
+    ├── Isometeric Drawing.jpg
     └── Turbo Avenger - Team#221 Poster.jpg
 ```
 
